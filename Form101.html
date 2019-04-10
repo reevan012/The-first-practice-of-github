@@ -1,0 +1,81 @@
+<!Doctype html>
+<html>
+<head>www.structure for application.com</head>
+
+<body>
+<h1>AESOP</h1>
+<h4>Application form</h4>
+
+<h4>Person resposible for the award</h4>
+<p>Dr.Omer sykee</p>
+<form name="myform" style="background-color:blue">
+<fieldset><legend><p>please fill in the form below to participate in the award</p></legend>
+Name of schools,member of AESOP?<br>
+<input type="text" name="a"><br>
+Contact person,email,telephone<br>
+<input type="text" name="b"><br>
+Addres/Web site address<br>
+<input type="text" name="c"><br>
+Title of course or module nominated<br>
+<input type="text" name="d"><br>
+<h3>Course description</h3>
+Course content(max.1000 words)<br>
+<textarea hieght="20%" width="80%"></textarea><br>
+Contextfinstitutional setting(max.400 words)<br>
+<input type="text" name="e"><br>
+Learners(max.400 words)<br>
+<input type="text" name="f"><br>
+<h3>High quality and creative approch</h3>
+Development of learner's capacity(max.700 words)<br>
+<input type="text" name="g"><br>
+Students preparation for practice<br>
+<input type="text" name="h"><br>
+Application of successful elements (max.850 words)<br>
+<input type="text" name="i"><br>
+If there has been a formal of the module/course by the university, please include the details here
+<h3>Self-assessment</h3>
+Teachers Self-assessment<br>
+<input type="text" name="j"><br>
+Students Self-assessment<br>
+<input type="text" name="k"><br>
+<h3>Additional to the administrator</h3>
+Notes to the administrator<br>
+<input type="text" name="l">
+</fieldset>
+<button type="button" Onclick="myfunction()">Submit</button><button>Reset</button>
+</form>
+<p id="za"></p><p id="zz"></p><p id="zzz"></p><p id="zb"></p><p id="zc"></p><p id="zd"></p><p id="ya"></p><p id="yb"></p>
+<p id="yc"></p><p id="yd"></p><p id="xy"></p><p id="yz"></p>
+
+<script>
+var test=""
+function myfunction(){
+test=document.myform.a.value;
+document.getElementById("za").innerHTML=test;
+test=document.myform.b.value;
+document.getElementById("zz").innerHTML=test;
+test=document.myform.c.value;
+document.getElementById("zzz").innerHTML=test;
+test=document.myform.d.value;
+document.getElementById("zb").innerHTML=test;
+test=document.myform.e.value;
+document.getElementById("zc").innerHTML=test;
+test=document.myform.f.value;
+document.getElementById("zd").innerHTML=test;
+test=document.myform.g.value;
+document.getElementById("ya").innerHTML=test;
+test=document.myform.h.value;
+document.getElementById("yb").innerHTML=test;
+test=document.myform.i.value;
+document.getElementById("yc").innerHTML=test;
+test=document.myform.j.value;
+document.getElementById("yd").innerHTML=test;
+test=document.myform.k.value;
+document.getElementById("xy").innerHTML=test;
+test=document.myform.l.value;
+document.getElementById("yz").innerHTML=test;
+
+}
+</script>
+</body>
+</html>
