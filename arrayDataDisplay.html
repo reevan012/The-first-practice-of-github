@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/mystyle.css" >
+</head>
+<body>
+<form name="myForm">
+Item: <br>
+<input type="text" name="item" />
+<br>
+
+<input type="button" name="add" onClick="addItems()" value="Add" />
+
+</form>
+<p id="result"></p>
+<script>
+var items = [];
+function addItems() {
+if(document.myForm.item.value != "") {
+items.push(document.myForm.item.value);
+var text = "";
+for (var i = 0; i < items.length; i++) {
+	text = text+ items[i] + "<br>"
+}
+document.getElementById("result").innerHTML = text
+document.myForm.item.value = ""
+}
+
+}
+</script>
+</body>
+</html>
